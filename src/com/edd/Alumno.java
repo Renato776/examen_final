@@ -18,4 +18,11 @@ public class Alumno {
     public String get_visualization(){
         return "nombre: "+nombre+" carnet: "+carnet;
     }
+    public String get_text(boolean show_all_details){
+        if(show_all_details){
+            return "\""+"nombre: "+nombre+" carnet: "+carnet+"\"";
+        }else{
+            return "\""+carnet+"\"";
+        }
+    }
 }

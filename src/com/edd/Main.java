@@ -2,6 +2,7 @@ package com.edd;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.PrintWriter;
 import java.util.Scanner;
 public class Main {
 
@@ -54,11 +55,62 @@ public class Main {
             }
             System.out.println("Finished loading all students!!");
             arbol.simple_visualization();
+            graph_traversal(arbol.get_preorder(),"preorder");
+            graph_traversal(arbol.get_inorden(),"inorden");
+            graph_traversal(arbol.get_postorder(),"postorder");
+            graph_Treant(arbol,false);
         }
         else{
             System.out.println("File: "+file_name+" Does not exist. Operation failed.");
             return;
         }
 
+    }
+    public static void graph_traversal(Alumno[] traversal, String name){
+        String graph = "digraph foo {rankdir=LR; node [shape=record];"+'\n';
+        int i = 0;
+        while(i<traversal.length){
+            graph += "n"+i+" [label = \""+traversal[i].get_visualization()+"\"]; \n";
+            if((i+1)<traversal.length){
+                graph += "n"+i+" -> "+"n"+(i+1)+"; \n";
+            }
+            i++;
+        }
+        graph += "}";
+        print_archive(name+".dot",graph);
+    }
+    public static void print_archive(String name, String content){
+        File file = new File(name);
+        try{
+            file.createNewFile();
+            PrintWriter writer = new PrintWriter(name, "UTF-8");
+            writer.println(content);
+            writer.close();
+        }catch (Exception e){
+        }
+    }
+    public static void graph_Treant(Arbol arbol,boolean show_all_details){
+        String graph = "config = {\n" +
+                "    container: \"#tree-simple\"\n" +
+                "};\n";
+        int i = 0;
+        String node_names = "";
+        boolean is_first = true;
+        for (Alumno al: arbol.contenido) {
+            if(al != null){
+                if(is_first){
+                    graph += "n"+i+"={text:{name: "+al.get_text(show_all_details)+" }}; \n";
+                    node_names += ", n"+i;
+                    is_first = false;
+                }else{
+                    graph += "n"+i+"={parent: n"+arbol.get_parent(i)+", text: {name: "+al.get_text(show_all_details)+" }}; \n";
+                    node_names += ", n"+i;
+                }
+            }
+            i++;
+        }
+        graph+= "simple_chart_config = [config "+node_names+"]; \n" +
+                "var my_chart = new Treant(simple_chart_config);\n";
+        print_archive("edd_tree_report.js",graph);
     }
 }
