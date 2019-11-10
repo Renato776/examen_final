@@ -257,34 +257,37 @@ public class Arbol {
     }
     private  static  int ren =0;
     public void visit_preorder(Alumno[] vessel, int node){
+        if (contenido[node] == null)
+            return;
         vessel[ren] = contenido[node];
         ren++;
-        if(contenido[left(node)]!=null){
-            visit_preorder(vessel,left(node));
-        }
-        if(contenido[right(node)]!=null){
-            visit_preorder(vessel,right(node));
-        }
+        visit_preorder(vessel, left(node));
+
+        visit_preorder(vessel, right(node));
+
     }
     public void visit_postorder(Alumno[] vessel, int node){
-        if(contenido[left(node)]!=null){
-            visit_preorder(vessel,left(node));
-        }
-        if(contenido[right(node)]!=null){
-            visit_preorder(vessel,right(node));
-        }
+        if (contenido[node] == null)
+            return;
+
+        visit_postorder(vessel, left(node));
+
+        visit_postorder(vessel, right(node));
+
         vessel[ren] = contenido[node];
         ren++;
     }
     public void visit_inorden(Alumno[] vessel, int node){
-        if(contenido[left(node)]!=null){
-            visit_preorder(vessel,left(node));
-        }
+        if (contenido[node] == null)
+            return;
+
+        visit_inorden(vessel, left(node));
+
         vessel[ren] = contenido[node];
         ren++;
-        if(contenido[right(node)]!=null){
-            visit_preorder(vessel,right(node));
-        }
+
+        visit_inorden(vessel, right(node));
+
     }
     public Alumno[] get_preorder(){
         Alumno[] res = new Alumno[filled_nodes];
