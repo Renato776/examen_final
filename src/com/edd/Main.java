@@ -1,4 +1,5 @@
 package com.edd;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -10,61 +11,108 @@ public class Main {
 	// write your code here
         Scanner in = new Scanner(System.in);
         Arbol arbol = new Arbol();
+        Printing aux = new Printing(6);
+        aux.add("Cargar Archivo");
+        aux.add("Reporte de recorrido inorden");
+        aux.add("Reporte de recorrido preorden");
+        aux.add("Reporte de recorrido postorden");
+        aux.add("Reporte del arbol avl");
+        aux.add("salir");
         System.out.println("Examen Final");
-        System.out.println("Puede escribir \"exit\" cada vez que se le pregunte input para finalizar la ejecucion.");
-        System.out.println("Escriba el nombre del archivo csv que desea cargar:");
-        String file_name = in.nextLine();
-        if(file_name.equals("exit")){
-            return;
-        }
-        File file = new File(file_name);
-        if(file.exists()){
-            try{
-                BufferedReader br = new BufferedReader(new FileReader(file));
-                String st;
-                while ((st = br.readLine()) != null)
-                {
-                    String[] datos;
-                    datos = st.split(",");
-                    if(datos.length != 2){
-                        System.out.println("Syntax error in line: "+st);
-                        System.out.println("Skipped this line.");
-                        continue;
-                    }
-                    boolean is_number = false;
+        int choice = 0;
+        while (choice != (aux.options.length-1)){
+            aux.print_options();
+            choice = aux.get_choice();
+            if(choice == 0){
+                arbol = new Arbol();
+                System.out.println("Escribe el nombre del archivo csv a cargar: ");
+                //Cargar Archivo
+                String file_name = in.nextLine();
+                File file = new File(file_name);
+                if(file.exists()){
                     try{
-                        int io = Integer.parseInt(datos[0]);
-                        is_number = true;
-                    }catch (Exception ex){
-                        is_number = false;
-                    }
-                    if(is_number){
-                        Alumno alumno = new Alumno(datos[1],datos[0]);
-                        arbol.insert(alumno);
-                    }else{
-                        if(!datos[0].trim().toLowerCase().equals("carne")){
-                            System.out.println("El carnet del alumno debe ser un numero. Se encontro: "+st);
-                            System.out.println("Se ignorara esta linea");
+                        BufferedReader br = new BufferedReader(new FileReader(file));
+                        String st;
+                        while ((st = br.readLine()) != null)
+                        {
+                            String[] datos;
+                            datos = st.split(",");
+                            if(datos.length != 2){
+                                System.out.println("Syntax error in line: "+st);
+                                System.out.println("Skipped this line.");
+                                continue;
+                            }
+                            boolean is_number = false;
+                            try{
+                                int io = Integer.parseInt(datos[0]);
+                                is_number = true;
+                            }catch (Exception ex){
+                                is_number = false;
+                            }
+                            if(is_number){
+                                Alumno alumno = new Alumno(datos[1],datos[0]);
+                                arbol.insert(alumno);
+                            }else{
+                                if(!datos[0].trim().toLowerCase().equals("carne")){
+                                    System.out.println("El carnet del alumno debe ser un numero. Se encontro: "+st);
+                                    System.out.println("Se ignorara esta linea");
+                                    continue;
+                                }
+                            }
                         }
+                    }catch (Exception e){
+                        System.out.println(e.toString());
+                        System.out.println(e.getMessage());
+                        System.out.println("An Error occurred while reading file: "+file_name+" Operation failed.");
                     }
+                    System.out.println("Finished loading all students!!");
+                 }
+                else{
+                    System.out.println("File: "+file_name+" Does not exist. Operation failed.");
+                    continue;
                 }
-            }catch (Exception e){
-                System.out.println(e.toString());
-                System.out.println(e.getMessage());
-                System.out.println("An Error occurred while reading file: "+file_name+" Operation failed.");
+            } else if(choice == 1){
+                //Recorrido inorden
+                graph_traversal(arbol.get_inorden(),"inorden");
+                try{
+                    Process p = Runtime.getRuntime().exec("dot "+"inorden"+".dot -Tpng -o "+"inorden"+".png");
+                    Thread.currentThread().sleep(2000);
+                    Process p1 = Runtime.getRuntime().exec("eog "+"inorden"+".png");
+                    System.out.println("If the Image is too big, I recommend open it manually with a more potent viewer.");
+                }catch (Exception ex){
+                    System.out.println("An error occurred while trying to compile the dot code: "+ex.toString());
+                }
+            }else if(choice == 2){
+                //Recorrido preorden:
+                graph_traversal(arbol.get_preorder(),"preorden");
+                try{
+                    Process p = Runtime.getRuntime().exec("dot "+"preorden"+".dot -Tpng -o "+"preorden"+".png");
+                    Thread.currentThread().sleep(2000);
+                    Process p1 = Runtime.getRuntime().exec("eog "+"preorden"+".png");
+                }catch (Exception ex){
+                    System.out.println("An error occurred while trying to compile the dot code: "+ex.toString());
+                }
+            }else if(choice == 3){
+                //Recorrido post orden:
+                graph_traversal(arbol.get_postorder(), "postorder");
+                try{
+                    Process p = Runtime.getRuntime().exec("dot "+"preorden"+".dot -Tpng -o "+"preorden"+".png");
+                    Thread.currentThread().sleep(2000);
+                    Process p1 = Runtime.getRuntime().exec("eog "+"preorden"+".png");
+                }catch (Exception ex){
+                    System.out.println("An error occurred while trying to compile the dot code: "+ex.toString());
+                }
+                //Use eog to open images.
+            }else if(choice == 4){
+                graph_Treant(arbol,false);
+                try{
+                    File htmlFile = new File("index.html");
+                    Desktop.getDesktop().browse(htmlFile.toURI());
+                }catch (Exception ex){
+                    System.out.println("An error while opening the html with default browser. However, you can open it manually.");
+                }
             }
-            System.out.println("Finished loading all students!!");
-            arbol.simple_visualization();
-            graph_traversal(arbol.get_preorder(),"preorder");
-            graph_traversal(arbol.get_inorden(),"inorden");
-            graph_traversal(arbol.get_postorder(),"postorder");
-            graph_Treant(arbol,false);
         }
-        else{
-            System.out.println("File: "+file_name+" Does not exist. Operation failed.");
-            return;
-        }
-
     }
     public static void graph_traversal(Alumno[] traversal, String name){
         String graph = "digraph foo {rankdir=LR; node [shape=record];"+'\n';

@@ -2,10 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c7dd91b-6951-4b03-9b7f-682192a91a11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Treant.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Treant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/basic-example/basic-example.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/basic-example/basic-example.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/basic-example/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/collapsable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/collapsable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/cheryl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/figgs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/lana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/malory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/pam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/sterling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/img/woodhouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/collapsable/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/comments/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/comments/example8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/comments/example8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/comments/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/connectors/connectors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/connectors/connectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/connectors/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-color-plus-scrollbar/custom-color-plus-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-color-plus-scrollbar/custom-color-plus-scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-color-plus-scrollbar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-colored/custom-colored.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-colored/custom-colored.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-colored/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/example6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/example6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/archaebacteria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/bonyfish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/cartilaginousfish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/chelirates.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/cnidarians.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/cvijece1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/cvijece2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/ferns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/flatare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/fungi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/greenalgae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/insekti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/kornjaca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/lophoprates.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/mosculs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/mosses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/ne_cvijece.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/protoctis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/ptica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/rak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/rotfiers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/roundworms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/segmentedworms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/slon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/spuzva.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/truebacteria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/zaba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/zmijurina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/img/zvezda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/evolution-tree/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/headshots/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/no-parent/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/no-parent/no-parent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/no-parent/no-parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/simple-scrollbar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/simple-scrollbar/simple-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/simple-scrollbar/simple-scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/super-simple/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/super-simple/super-simple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/super-simple/super-simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/example7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/example7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/arg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/aus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/can.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/esp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/fin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/fra.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/lat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/rus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/slo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/srb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/ukr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/flags/usa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tennis-draw/trophy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test_ground/example_configs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test_ground/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test_ground/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test_ground/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test_ground/slika-manja.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/timeline/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/timeline/timeline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/timeline/timeline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Printing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preorden.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/edd/Printing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jquery.easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jquery.mousewheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/perfect-scrollbar/perfect-scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/raphael.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Arbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Arbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Arbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Arbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traversal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +191,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573344425401</updated>
       <workItem from="1573344428266" duration="20300000" />
-      <workItem from="1573374607083" duration="2002000" />
+      <workItem from="1573374607083" duration="4632000" />
     </task>
     <servers />
   </component>
