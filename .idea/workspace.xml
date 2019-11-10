@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c7dd91b-6951-4b03-9b7f-682192a91a11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/Alumno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/Arbol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Alumno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Alumno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Arbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Examen_final/com/edd/Arbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Arbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Arbol.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573344425401</updated>
-      <workItem from="1573344428266" duration="5396000" />
+      <workItem from="1573344428266" duration="18652000" />
     </task>
     <servers />
   </component>
@@ -96,20 +96,21 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/edd/Arbol.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/edd/Arbol.java</url>
-          <line>9</line>
-          <properties class="com.edd.Arbol" method="insert">
+          <line>61</line>
+          <properties class="com.edd.Arbol" method="leftRotate">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="contenido[4]" />
+        <watch expression="contenido[2]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
